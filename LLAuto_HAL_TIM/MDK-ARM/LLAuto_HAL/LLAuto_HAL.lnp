@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"llauto_hal\startup_stm32f103xe.o"
+"llauto_hal\stm32f1xx_it.o"
+"llauto_hal\main.o"
+"llauto_hal\stm32f1xx_hal_msp.o"
+"llauto_hal\stm32f1xx_hal_uart.o"
+"llauto_hal\stm32f1xx_hal_rcc.o"
+"llauto_hal\stm32f1xx_hal_pwr.o"
+"llauto_hal\stm32f1xx_hal_flash.o"
+"llauto_hal\stm32f1xx_hal_tim_ex.o"
+"llauto_hal\stm32f1xx_hal_dma.o"
+"llauto_hal\stm32f1xx_hal_rcc_ex.o"
+"llauto_hal\stm32f1xx_hal_cortex.o"
+"llauto_hal\stm32f1xx_hal_gpio_ex.o"
+"llauto_hal\stm32f1xx_hal_flash_ex.o"
+"llauto_hal\stm32f1xx_hal_gpio.o"
+"llauto_hal\stm32f1xx_hal.o"
+"llauto_hal\stm32f1xx_hal_tim.o"
+"llauto_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LLAuto_HAL\LLAuto_HAL.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LLAuto_HAL.map" -o LLAuto_HAL\LLAuto_HAL.axf
